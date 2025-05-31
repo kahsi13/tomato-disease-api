@@ -1,0 +1,27 @@
+# Bytecode ve cache dosyaları
+__pycache__/
+*.py[cod]
+*.so
+
+# Sanal ortam klasörleri
+env/
+venv/
+.venv/
+
+# Büyük model dosyaları ve artefaktlar
+model/model.safetensors
+model/model.safetensors.base64
+model/pytorch_model.bin
+
+# Chunk klasörünü hariç tutma!
+# ! işareti ile içindeki part dosyaları hariç tutulmaz
+# Eğer yüklemek istiyorsan chunk'ı dahil et:
+# !model/chunk/
+# !model/chunk/*.part
+
+# VSCode ayarları
+.vscode/
+
+# OS temporary files
+.DS_Store
+Thumbs.db

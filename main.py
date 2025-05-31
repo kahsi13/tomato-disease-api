@@ -7,12 +7,12 @@ from model.decode_model import decode_model
 
 app = FastAPI()
 
-# Eğer model dosyası yoksa, parçalardan oluştur
+# Model dosyası yoksa decode et
 model_path = "model/model.safetensors"
 if not os.path.exists(model_path):
     decode_model()
 
-# Tokenizer ve model yükle
+# Tokenizer ve model yükleniyor
 tokenizer = BertTokenizer.from_pretrained("model")
 model = BertForSequenceClassification.from_pretrained(
     "model",
@@ -20,7 +20,7 @@ model = BertForSequenceClassification.from_pretrained(
     torch_dtype=torch.float32
 )
 
-# Tahmin isteği için veri modeli
+# API veri modeli
 class PredictionRequest(BaseModel):
     text: str
 

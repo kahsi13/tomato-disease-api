@@ -1,0 +1,50 @@
+{
+  "_name_or_path": "model/checkpoint-516",
+  "architectures": [
+    "BertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "Bacterial_spot",
+    "1": "Early_blight",
+    "2": "Late_blight",
+    "3": "Leaf_Mold",
+    "4": "Septoria_leaf_spot",
+    "5": "Spider_mites",
+    "6": "Target_Spot",
+    "7": "Tomato_Yellow_Leaf_Curl_Virus",
+    "8": "Tomato_mosaic_virus",
+    "9": "healthy"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "Bacterial_spot": 0,
+    "Early_blight": 1,
+    "Late_blight": 2,
+    "Leaf_Mold": 3,
+    "Septoria_leaf_spot": 4,
+    "Spider_mites": 5,
+    "Target_Spot": 6,
+    "Tomato_Yellow_Leaf_Curl_Virus": 7,
+    "Tomato_mosaic_virus": 8,
+    "healthy": 9
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "problem_type": "single_label_classification",
+  "torch_dtype": "float32",
+  "transformers_version": "4.49.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 32000
+}
