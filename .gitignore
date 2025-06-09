@@ -1,0 +1,21 @@
+# Model checkpoints ve büyük dosyalar
+model/*.safetensors
+model/optimizer.pt
+model/scheduler.pt
+model/trainer_state.json
+model/training_args.bin
+
+# Dataset
+data/*.csv
+
+# HuggingFace tokenizer ve config dosyaları (EĞER tekrar üretilebiliyorsa)
+model/tokenizer.json
+model/tokenizer_config.json
+model/special_tokens_map.json
+model/vocab.txt
+
+# Pycache, system junk
+__pycache__/
+*.py[cod]
+*.DS_Store
+.env
